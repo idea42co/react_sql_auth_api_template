@@ -1,0 +1,25 @@
+{
+    "name": "applicationname_base",
+    "author": "Idea42, LLC",
+    "license": "ISC",
+    "version": "1.0.0",
+    "description": "NodeJS Restful API, authenticating with JWT using Mongo backend",
+    "main": "server/index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "babel-node server/index.js",
+      "apps:install:web": "cd web && npm install",
+      "apps:install:api": "cd api && npm install",
+      "apps:install": "npm-run-all apps:install:web apps:install:api",
+      "apps:run:web": "cd web && npm run start", 
+      "apps:run:api": "cd api && npm run dev", 
+      "apps:run": "concurrently npm:apps:run:web npm:apps:run:api",
+      "dev": "npm-run-all apps:install apps:run"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "npm-run-all": "^4.1.3", 
+      "concurrently": "^4.0.1",
+      "shx": "^0.3.2"
+    }
+  }
