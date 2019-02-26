@@ -44,7 +44,7 @@ class LoginPage extends Component {
                 <div className="cardContainer">
                     <div className="card">
                         <div className="card-content">
-                            <span className="card-title">ReactJS + AuthAPI with Mongo</span>
+                            <span className="card-title">ReactJS + AuthAPI with Sequelize</span>
                             <p>Welcome to your new ReactJS Application! Before we begin, please log in. If you don't have an account, please <Link to="/register">register here.</Link></p>
                             <div className="row">
                                 <div className="input-field col s12">
